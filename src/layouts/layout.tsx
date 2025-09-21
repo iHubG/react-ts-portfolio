@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 const layout = () => {
   return (
-    <div className="dark:bg-[#0f172a] py-5 lg:py-10 h-full lg:h-screen">
+    <div className="dark:bg-[#0f172a] py-5 lg:py-10 h-full">
       <Navbar />
 
       <main className="p-6">
