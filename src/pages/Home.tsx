@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot, FaGraduationCap } from "react-icons/fa6";
 import SocialButton from "@/components/home/SocialButton";
 import About from "@/components/home/About"
+import FeaturedProjects from "@/components/home/FeaturedProjects";
 
 const Home = () => {
   const socialLinks = [
@@ -29,7 +30,7 @@ const Home = () => {
 
   return (
     <section className="max-w-6xl mx-auto py-2 px-0 lg:px-5 lg:py-2">
-      <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mt-5 lg:mt-10">
         {/* Profile */}
         <div className="flex rounded-xl">
           <img
@@ -67,6 +68,7 @@ const Home = () => {
       </div>
 
       <About />
+      <FeaturedProjects />
     </section>
   );
 };

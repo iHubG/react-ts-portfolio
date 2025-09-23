@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
 import { type ProjectProps } from "@/types";
 import StayFit from "@/assets/images/stayfit.png";
 import ClothingEcommerce from "@/assets/images/clothing-ecommerace.png";
 import Consultation from "@/assets/images/consultation.png";
+import { ArrowRight } from "lucide-react";
 
-const Projects = () => {
+const FeaturedProjects = () => {
   const projects: ProjectProps[] = [
     {
       id: 1,
@@ -46,14 +48,14 @@ const Projects = () => {
   ];
 
   return (
-    <section className="grid grid-cols-6 gap-10 max-w-6xl mx-auto">
+    <section className="grid grid-cols-6 gap-10 max-w-6xl mx-auto mt-10 lg:mt-20">
       <div
         className="rounded-xl 
                    px-0 py-5 lg:py-10 lg:px-5 col-span-6"
       >
         <div className="flex flex-col gap-5">
           <h2 className="text-xl text-center font-semibold text-gray-900 dark:text-white mb-5">
-            Projects
+            Featured Projects
           </h2>
 
           <div className="grid gap-10 lg:grid-cols-3">
@@ -62,11 +64,22 @@ const Projects = () => {
             ))}
           </div>
 
-         
+          {/* View all button */}
+          <div className="mt-4 text-center">
+            <Link
+              to="/projects"
+              className="inline-block px-4 py-2 text-sm font-medium rounded-lg
+                         text-blue-600 hover:bg-blue-100 
+                         dark:text-blue-400 dark:hover:bg-gray-800 transition"
+            >
+              View All Projects{" "}
+              <ArrowRight size={16} className="inline-block ml-2" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default FeaturedProjects;
