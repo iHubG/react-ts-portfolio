@@ -17,7 +17,7 @@ const Navbar = () => {
             key={to}
             to={to}
             className={({ isActive }) =>
-              `py-1 px-3 lg:px-5 lg:py-1 rounded-full transition ${
+              `text-sm lg:text-base py-1 px-3 lg:px-5 lg:py-1 rounded-full transition ${
                 isActive
                   ? "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-white font-semibold"
                   : "hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white"
