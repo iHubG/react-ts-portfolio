@@ -5,6 +5,7 @@ import { FaLocationDot, FaGraduationCap } from "react-icons/fa6";
 import SocialButton from "@/components/home/SocialButton";
 import About from "@/components/home/About"
 import FeaturedProjects from "@/components/home/FeaturedProjects";
+import TechStack from "@/components/home/TechStack";
 
 const Home = () => {
   const socialLinks = [
@@ -69,6 +70,7 @@ const Home = () => {
 
       <About />
       <FeaturedProjects />
+      <TechStack />
     </section>
   );
 };

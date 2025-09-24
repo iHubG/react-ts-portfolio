@@ -43,6 +43,16 @@ const Projects = () => {
       repo: "https://github.com/iHubG/consultation-scheduling-system-v3",
       live: "N/A",
     },
+    {
+      id: 4,
+      title: "Furniture E-commerce Landing Page",
+      description:
+        "An e-commerce furniture website built from a free Figma template. Based on the Panto - Furniture Landing Page template.",
+      tech: ["React", "Tailwind CSS", "Hero UI"],
+      image: "",
+      repo: "https://github.com/iHubG/e-commerce-furn",
+      live: "https://e-commerce-furn.vercel.app/",
+    },
   ];
 
   return (
@@ -52,7 +62,7 @@ const Projects = () => {
                    px-0 py-5 lg:py-10 lg:px-5 col-span-6"
       >
         <div className="flex flex-col gap-5">
-          <h2 className="text-xl text-center font-semibold text-gray-900 dark:text-white mb-5">
+          <h2 className="text-2xl text-center font-semibold text-gray-900 dark:text-white mb-10">
             Projects
           </h2>
 
@@ -61,8 +71,6 @@ const Projects = () => {
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
-
-         
         </div>
       </div>
     </section>

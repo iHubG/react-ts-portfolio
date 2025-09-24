@@ -1,8 +1,8 @@
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-gray-100 text-center">
-      © {new Date().getFullYear()} Ian Dev
+    <footer className="text-sm p-5 text-gray-800 bg-gray-100 dark:text-white dark:bg-gray-800 text-center">
+      © {new Date().getFullYear()} Ian Macalinao. All rights reserved.
     </footer>
   );
 };

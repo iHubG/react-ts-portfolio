@@ -48,7 +48,7 @@ const FeaturedProjects = () => {
   ];
 
   return (
-    <section className="grid grid-cols-6 gap-10 max-w-6xl mx-auto mt-10 lg:mt-20">
+    <section className="grid grid-cols-6 gap-10 max-w-6xl mx-auto mt-20 lg:mt-20">
       <div
         className="rounded-xl 
                    px-0 py-5 lg:py-10 lg:px-5 col-span-6"

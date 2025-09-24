@@ -2,7 +2,7 @@ import Internship from "./Internship";
 
 const About = () => {
   return (
-    <section className="grid grid-cols-6 gap-10 lg:gap-5 max-w-6xl mx-auto mt-10 lg:mt-20 ">
+    <section className="grid grid-cols-6 gap-10 lg:gap-5 max-w-6xl mx-auto mt-20 lg:mt-20 ">
       <div
         className="rounded-xl 
                  border-[0.5px] border-gray-300 
