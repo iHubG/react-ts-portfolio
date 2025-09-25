@@ -54,7 +54,7 @@ function AiChat() {
 
       {/* Chat Panel */}
       {open && (
-        <div className="fixed bottom-33 md:bottom-32 right-6 z-50 w-90 bg-white/95 rounded-2xl shadow-2xl flex flex-col h-96">
+        <div className="fixed bottom-33 md:bottom-32 right-6 z-50 w-80 md:w-85 lg:w-90 bg-white/95 rounded-2xl shadow-2xl flex flex-col h-96">
           {/* Header */}
           <div className="flex items-center justify-between p-3 border-b border-gray-100 bg-gradient-to-r from-violet-50 to-indigo-50 rounded-t-2xl">
             <div className="flex items-center space-x-2">
