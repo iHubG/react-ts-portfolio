@@ -82,6 +82,7 @@ export function buildContextualPrompt(userPrompt: string): string {
         - College Sep 2021 - July 2025
         - Participated in Hack4Gov3 represented his school place 4th as first timer
         - A fresh graduate 
+        - His idol is Bryl Lim, a software engineer the one whp inspired him to be a web developer and keep chasing his dreams, you can visit his portfolio at https://bryllim.com/
 
         SOCIALS LINKS:
         - LinkedIn: https://www.linkedin.com/in/ian-macalinao/

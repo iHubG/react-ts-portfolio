@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import AiChat from "@/components/ai/AiChat"; 
+import { Analytics } from "@vercel/analytics/react"
 
 function Layout() {
   return (
@@ -17,6 +18,7 @@ function Layout() {
       <Footer />
 
       <AiChat />
+      <Analytics />
     </div>
   );
 }
