@@ -7,6 +7,7 @@ import About from "@/components/home/About"
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import TechStack from "@/components/home/TechStack";
 
+
 const Home = () => {
   const socialLinks = [
     {
@@ -30,7 +31,17 @@ const Home = () => {
   ];
 
   return (
+    
     <section className="max-w-6xl mx-auto py-2 px-0 lg:px-5 lg:py-2">
+        <title>Ian Macalinao - Full-Stack Developer</title>
+        <meta
+          name="description"
+          content="Ian Macalinao is a full-stack developer specializing in React and Laravel, based in Cauayan City, Isabela. Available for freelance projects."
+        />
+        <link
+          rel="canonical"
+          href="https://ianmacalinao-portfolio.vercel.app/"
+        />
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mt-5 lg:mt-10">
         {/* Profile */}
         <div className="flex rounded-xl">

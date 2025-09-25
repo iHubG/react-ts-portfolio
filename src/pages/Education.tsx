@@ -67,6 +67,7 @@ const Education = () => {
 
   return (
     <section className="max-w-6xl mx-auto px-0 py-5 lg:py-10 lg:px-5">
+        <title>Ian Macalinao - Education</title>
       <h2 className="text-2xl text-center font-semibold text-gray-900 dark:text-white mb-10">
         Education & Certificates
       </h2>

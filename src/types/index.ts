@@ -29,4 +29,22 @@ export interface CertificatesProps {
   color?: string;
 }
 
+export type MessageType = "user" | "ai" | "error";
+
+export interface ChatMessage {
+  type: MessageType;
+  content: string;
+  timestamp: number;
+}
+
+export interface AiInputProps {
+  onSend: (text: string) => void;
+  loading: boolean;
+}
+
+export interface AiMessagesProps {
+  messages: ChatMessage[];
+  loading: boolean;
+}
+
 

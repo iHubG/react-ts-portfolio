@@ -23,7 +23,7 @@ const Footer = () => {
         }`}
         aria-label="Scroll to top"
       >
-        <ArrowUp size={20} />
+        <ArrowUp size={16} />
       </button>
     </footer>
   );
