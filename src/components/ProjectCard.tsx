@@ -58,17 +58,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           >
             <Github size={16} /> Repository
           </a>
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm  py-1 px-2 rounded  text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition
+          {project.live === "N/A" ? null : (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm  py-1 px-2 rounded  text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white transition
                  bg-gray-100/70 dark:bg-gray-900/40 backdrop-blur-sm
                  border border-gray-300 hover:border-gray-400 dark:border-gray-800/50 dark:hover:border-gray-700
                  hover:bg-gray-200 dark:hover:bg-gray-800/60 "
-          >
-            <ExternalLink size={16} /> Live
-          </a>
+            >
+              <ExternalLink size={16} /> Live
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -1,5 +1,3 @@
-
-
 export interface SocialButtonProps {
   href: string;
   label: string;
@@ -21,25 +19,14 @@ export interface ProjectCardProps {
   project: ProjectProps;
 }
 
-export interface InternshipProps {
-  role: string;
-  company: string;
-  location: string;
-  startDate: string;
-  endDate: string;
-  achievements: string[];
+export interface CertificatesProps {
+  id: number;
+  title: string;
+  issuer: string;
+  year: string;
+  image: string | React.ComponentType<{ size?: number; color?: string }>;
+  url: string;
+  color?: string;
 }
 
-export interface EducationProps {
-  school: string;
-  degree: string;
-  startDate: string;
-  endDate: string;
-  certificates?: string[];
-}
 
-export interface SkillProps {
-  name: string;
-  level?: string;
-  icon?: React.ComponentType<{ size?: number; className?: string }>;
-}

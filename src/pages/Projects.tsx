@@ -3,6 +3,7 @@ import { type ProjectProps } from "@/types";
 import StayFit from "@/assets/images/stayfit.png";
 import ClothingEcommerce from "@/assets/images/clothing-ecommerace.png";
 import Consultation from "@/assets/images/consultation.png";
+import Furniture from "@/assets/images/furniture.png";
 
 const Projects = () => {
   const projects: ProjectProps[] = [
@@ -49,9 +50,31 @@ const Projects = () => {
       description:
         "An e-commerce furniture website built from a free Figma template. Based on the Panto - Furniture Landing Page template.",
       tech: ["React", "Tailwind CSS", "Hero UI"],
-      image: "",
+      image: Furniture,
       repo: "https://github.com/iHubG/e-commerce-furn",
       live: "https://e-commerce-furn.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Mobile Expense Tracker",
+      description:
+        "A simple expense tracker mobile app built using Java and Kotlin to help users track daily expenses.",
+      tech: ["Kotlin", "Java", "Android Studio"],
+      image:
+        "https://placehold.co/400x250?text=Image+Preview+Not+Available&font=roboto",
+      repo: "https://github.com/iHubG/expense-tracker-app",
+      live: "N/A",
+    },
+    {
+      id: 6,
+      title: "Class Record Management System - ISU Cauayan",
+      description:
+        "A web-based application designed to streamline the class record management process for instructors at ISU Cauayan.",
+      tech: ["PHP", "Bootstrap", "Jquery", "JavaScript", "MySQL"],
+      image:
+        "https://placehold.co/400x250?text=Image+Preview+Not+Available&font=roboto",
+      repo: "https://github.com/iHubG/Class-Record-Management-System",
+      live: "N/A",
     },
   ];
 

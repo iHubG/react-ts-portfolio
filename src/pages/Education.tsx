@@ -1,4 +1,10 @@
 import { GraduationCap, Award, ExternalLink } from "lucide-react";
+import Accenture from "@/assets/images/Accenture.jpg";
+import JavaScriptPHP from "@/assets/images/JavaScriptPHP.jpg";
+import MobileApp from "@/assets/images/AppDev.jpg";
+import Cybersecurity from "@/assets/images/CyberSecurity.jpg";
+import { SiUdemy, SiAccenture, SiFreecodecamp } from "react-icons/si";
+import { type CertificatesProps } from "@/types";
 
 const Education = () => {
   const education = [
@@ -13,33 +19,49 @@ const Education = () => {
     },
   ];
 
-  const certificates = [
+  const certificates: CertificatesProps[] = [
     {
       id: 1,
-      title: "JavaScript Essentials",
-      issuer: "SoloLearn",
-      year: "2023",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", // example
-      url: "https://www.sololearn.com/certificates/CT-XXXXXX",
+      title: "Responsive Web Design",
+      issuer: "freeCodeCamp",
+      year: "July 8, 2025",
+      image: SiFreecodecamp,
+      url: "https://www.freecodecamp.org/certification/ianmacalinao/responsive-web-design",
+      color: "#0A0A23",
     },
     {
       id: 2,
-      title: "Front-End Development Libraries",
-      issuer: "freeCodeCamp",
-      year: "2023",
-      image:
-        "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg",
-      url: "https://www.freecodecamp.org/certification/xxxxxx/front-end-development-libraries",
+      title: "Full-Stack Development ATA",
+      issuer: "Accenture (via Udemy)",
+      year: "June 10, 2025",
+      image: SiAccenture,
+      url: Accenture,
+      color: "#A100FF",
     },
     {
       id: 3,
-      title: "Responsive Web Design",
-      issuer: "freeCodeCamp",
-      year: "2022",
-      image:
-        "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg",
-      url: "https://www.freecodecamp.org/certification/xxxxxx/responsive-web-design",
+      title: "JavaScript and PHP",
+      issuer: "Udemy",
+      year: "December 28, 2024",
+      image: SiUdemy,
+      url: JavaScriptPHP,
+      color: "#A435F0",
+    },
+    {
+      id: 4,
+      title: "Mobile App Development",
+      issuer: "Hostcripter Web Services",
+      year: "January, 2024",
+      image: MobileApp,
+      url: MobileApp,
+    },
+    {
+      id: 5,
+      title: "Cybersecurity",
+      issuer: "Code",
+      year: "November, 2024",
+      image: Cybersecurity,
+      url: Cybersecurity,
     },
   ];
 
@@ -103,13 +125,24 @@ const Education = () => {
                          hover:shadow-md dark:hover:shadow-[0_0_10px_rgba(255,255,255,0.2)] 
                          transition flex flex-col items-center text-center"
             >
-              {cert.image && (
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-16 h-16 object-contain mb-3"
-                />
-              )}
+              {cert.image &&
+                (typeof cert.image === "string" ? (
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-16 h-16 object-contain mb-3"
+                  />
+                ) : (
+                  <span className="w-16 h-16 flex items-center justify-center mb-3">
+                    {typeof cert.image === "function" ? (
+                      <cert.image
+                        size={64}
+                        color={cert.color || "currentColor"}
+                      />
+                    ) : null}
+                  </span>
+                ))}
+
               <h4 className="text-base font-semibold text-gray-900 dark:text-white">
                 {cert.title}
               </h4>
